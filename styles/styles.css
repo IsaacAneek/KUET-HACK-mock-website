@@ -1,0 +1,26 @@
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.info-panel-titles {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar-left-side-info-panel {
+    display: flex;
+}
+
+.top-bar-right-side-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    height: 40px;
+    align-items: center;
+}
+
+.description {
+    text-align: center;
+}
