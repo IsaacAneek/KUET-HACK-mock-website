@@ -1,0 +1,33 @@
+# =========================
+# Visual Studio files
+# =========================
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# =========================
+# Build outputs
+# =========================
+bin/
+obj/
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+# =========================
+# ASP.NET specific
+# =========================
+App_Data/*.mdf
+App_Data/*.ldf
+*.log
+
+# Temporary ASP.NET files
+/aspnet_client/
+_TemporaryFiles/
+
+# IIS Express
+.iisexpress/
