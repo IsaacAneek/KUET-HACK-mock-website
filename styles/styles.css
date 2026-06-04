@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 html {
-    font-size: 16px;
+    font-size: 14px;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -81,14 +81,27 @@ body {
 }
 
 .description-box {
-    font-size: 1.7rem;
-    font-weight: 300;
-    padding: 0px 50px 0px 50px
-}
-
-.description p, ul {
     font-size: 1.3rem;
     font-weight: 300;
+    padding: 0px 300px 0px 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.description ul {
+
+}
+
+.description {
+    font-size: 1.2rem;
+    font-weight: 380;
+    padding: 0px 80px 0px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.3px;
 }
 
 .info-panel-titles p {

@@ -39,29 +39,18 @@
 
             <div class="description">
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam minima nisi dolores, enim odit rem!
-                    Odio, amet. Quo architecto minima iure tempore hic, expedita molestiae earum consequatur, asperiores
-                    accusamus neque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, quas quos non fugiat
-                    aliquam eveniet enim quo nostrum consequuntur. Corporis asperiores in veniam dolorem nobis nesciunt ad?
-                    Aliquid, enim necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia omnis,
-                    maxime architecto dolor fugit rerum alias distinctio sequi, accusamus, iure esse odio a enim ex quae
-                    veniam similique. Nostrum, harum!
+                    The Hardware Acceleration Club (HAC) at KUET focuses on exploring and developing high-performance computing solutions through hardware acceleration, embedded systems, FPGA design, digital systems, and related technologies. Inspired by advances in modern computing architectures, the club provides a platform for students to learn, build, and innovate through hands-on projects, research, and collaboration.
                 </p>
 
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, accusamus! Quos, natus
-                    temporibus molestiae perspiciatis recusandae officia atque nesciunt dignissimos vel enim repellendus
-                    animi, debitis nihil aspernatur culpa! Veritatis, pariatur? Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Officiis tenetur illo possimus voluptatum at, eligendi eveniet odit velit, officia
-                    voluptatibus, autem doloremque? Dignissimos dolorum aperiam nisi perspiciatis inventore blanditiis
-                    repellendus.
+                    We are always excited to welcome new members who are passionate about technology and eager to contribute to a collaborative learning environment. We value curiosity, teamwork, creativity, and a hands-on approach to problem-solving. Our members come from diverse academic backgrounds and share a strong interest in hardware design, computer architecture, embedded systems, artificial intelligence acceleration, and emerging technologies.
                 </p>
 
                 <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, porro.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li>A brief description of your interests and why you would like to join the club.</li>
+                    <li>Your CV or résumé (optional but encouraged).</li>
+                    <li>Any relevant project portfolio, GitHub profile, or technical achievements (if available).</li>
+                    <li>The email subject should indicate your current academic level and department.</li>
                 </ul>
 
                 <asp:Button ID="BtnLearnMore" runat="server" Text="Learn More" />
