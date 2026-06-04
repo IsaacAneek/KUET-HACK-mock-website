@@ -57,7 +57,7 @@
             </div>
         </div>
 
-        <div>
+        <div class="contact-info-container">
             <p>Contact</p>
             <p>
                 Registrar <br />
