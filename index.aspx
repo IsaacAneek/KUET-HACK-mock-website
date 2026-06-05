@@ -18,11 +18,11 @@
             </div>
 
             <div class="top-bar-right-side-buttons">
-                <asp:Button ID="BtnHome" runat="server" Text="Home" />
-                <asp:Button ID="BtnPeople" runat="server" Text="People" />
-                <asp:Button ID="BtnResearch" runat="server" Text="Research" />
-                <asp:Button ID="BtnProjects" runat="server" Text="Projects" />
-                <asp:Button ID="BtnPublications" runat="server" Text="Publications" />
+                <asp:Button ID="BtnHome" runat="server" Text="Home" CssClass="nav-button"/>
+                <asp:Button ID="BtnPeople" runat="server" Text="People" CssClass="nav-button"/>
+                <asp:Button ID="BtnResearch" runat="server" Text="Research" CssClass="nav-button"/>
+                <asp:Button ID="BtnProjects" runat="server" Text="Projects" CssClass="nav-button"/>
+                <asp:Button ID="BtnPublications" runat="server" Text="Publications" CssClass="nav-button"/>
             </div>
         </div>
 
