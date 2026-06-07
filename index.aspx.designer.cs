@@ -69,13 +69,13 @@ namespace kuet_hack_mock
         protected global::System.Web.UI.WebControls.Button BtnProjects;
 
         /// <summary>
-        /// BtnPublications control.
+        /// BtnLogin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnPublications;
+        protected global::System.Web.UI.WebControls.Button BtnLogin;
 
         /// <summary>
         /// Robot1 control.

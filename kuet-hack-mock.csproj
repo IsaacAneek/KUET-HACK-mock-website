@@ -85,6 +85,7 @@
     <Content Include="assets\robot2.jpg" />
     <Content Include="assets\robot3.jpg" />
     <Content Include="index.aspx" />
+    <Content Include="login.aspx" />
     <Content Include="styles\styles.css" />
     <Content Include="testDB\testdb.aspx" />
     <Content Include="Web.config" />
@@ -97,7 +98,15 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="styles\login.css" />
     <Compile Include="testDB\testdb.aspx.cs">
       <DependentUpon>testdb.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

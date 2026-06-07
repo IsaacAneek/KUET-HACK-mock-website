@@ -22,8 +22,8 @@ body {
 .top-bar {
     display: flex;
     justify-content: space-between;
-    height: 20px;
     padding: 40px;
+    height: 30px;
     background-color: black;
     color: white;
 }
@@ -145,6 +145,7 @@ body {
     color: white;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
+    cursor: pointer;
 }
 
 ul {

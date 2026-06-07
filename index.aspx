@@ -22,7 +22,7 @@
                 <asp:Button ID="BtnPeople" runat="server" Text="People" CssClass="nav-button"/>
                 <asp:Button ID="BtnResearch" runat="server" Text="Research" CssClass="nav-button"/>
                 <asp:Button ID="BtnProjects" runat="server" Text="Projects" CssClass="nav-button"/>
-                <asp:Button ID="BtnPublications" runat="server" Text="Publications" CssClass="nav-button"/>
+                <asp:Button ID="BtnLogin" runat="server" Text="Login" OnClick="onLoginPageButtonClicked" CssClass="nav-button"/>
             </div>
         </div>
 
