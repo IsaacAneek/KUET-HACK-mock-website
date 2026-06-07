@@ -81,6 +81,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\hack_logo.jpg" />
+    <Content Include="assets\kuet.jpg" />
+    <Content Include="assets\profile_icon.png" />
     <Content Include="assets\robot1.jpg" />
     <Content Include="assets\robot2.jpg" />
     <Content Include="assets\robot3.jpg" />
