@@ -88,6 +88,7 @@
     <Content Include="assets\robot3.jpg" />
     <Content Include="index.aspx" />
     <Content Include="login.aspx" />
+    <Content Include="sql\create_table.sql" />
     <Content Include="styles\styles.css" />
     <Content Include="testDB\testdb.aspx" />
     <Content Include="Web.config" />
