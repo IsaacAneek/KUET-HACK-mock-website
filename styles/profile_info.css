@@ -1,1 +1,80 @@
-﻿
+﻿@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f6f9;
+}
+
+.login-info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    height: auto;
+}
+
+.profile-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.password-wrapper {
+    display: flex;
+    gap: 16px;
+}
+
+#btnUpdate {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+#btnUpdate:hover {
+    background-color: #1565c0;
+}
+
+span,
+label,
+input[type="text"],
+input[type="password"] {
+    padding: 4px 0px;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+}

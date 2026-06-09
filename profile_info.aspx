@@ -14,7 +14,6 @@
 
             <div class="login-info-box">
                 <asp:Label ID="lblLoginStatus" runat="server" Text="Logged in as: Guest" CssClass="status-text"></asp:Label>
-                <br />
                 <asp:Label ID="lblLastLogin" runat="server" Text="Last Login: N/A" CssClass="sub-text"></asp:Label>
             </div>
 
@@ -22,23 +21,23 @@
                 
                 <div class="form-group">
                     <asp:Label ID="lblUsername" runat="server" AssociatedControlID="txtUsername">Username:</asp:Label>
-                    <asp:TextBox ID="txtUsername" runat="server" CssClass="form-control" ReadOnly="true"></asp:TextBox>
+                    <asp:TextBox ID="txtUsername" runat="server" ReadOnly="true"></asp:TextBox>
                 </div>
 
                 <div class="form-group">
                     <asp:Label ID="lblRoll" runat="server" AssociatedControlID="txtRoll">Roll Number:</asp:Label>
-                    <asp:TextBox ID="txtRoll" runat="server" CssClass="form-control" ReadOnly="true"></asp:TextBox>
+                    <asp:TextBox ID="txtRoll" runat="server" ReadOnly="true"></asp:TextBox>
                 </div>
 
                 <div class="form-group">
                     <asp:Label ID="lblDepartment" runat="server" AssociatedControlID="txtDepartment">Department:</asp:Label>
-                    <asp:TextBox ID="txtDepartment" runat="server" CssClass="form-control" ReadOnly="true"></asp:TextBox>
+                    <asp:TextBox ID="txtDepartment" runat="server" ReadOnly="true"></asp:TextBox>
                 </div>
 
                 <div class="form-group">
                     <asp:Label ID="lblPassword" runat="server" AssociatedControlID="txtPassword">Password:</asp:Label>
                     <div class="password-wrapper">
-                        <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="form-control"></asp:TextBox>
+                        <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
                         <asp:Button ID="btnTogglePassword" runat="server" Text="Show" OnClick="onShowPasswordClicked" CssClass="btn-secondary" UseSubmitBehavior="false" />
                     </div>
                 </div>
@@ -46,7 +45,7 @@
             </div>
 
             <div class="form-actions">
-                <asp:Button ID="btnUpdate" runat="server" Text="Update Password" OnClick="onUpdateInfoClicked" CssClass="btn-primary" />
+                <asp:Button ID="btnUpdate" runat="server" Text="Update Info" OnClick="onUpdateInfoClicked" CssClass="btn-primary" />
                 <asp:Label ID="lblMessage" runat="server" CssClass="message-label" ForeColor="Green"></asp:Label>
             </div>
 
