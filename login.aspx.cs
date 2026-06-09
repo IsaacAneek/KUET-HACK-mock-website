@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
-using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -15,7 +13,7 @@ namespace kuet_hack_mock
         {
 
         }
-        
+
         protected void onLoginClicked(object sender, EventArgs e)
         {
             string inputUserName = username.Text.Trim();
@@ -36,16 +34,18 @@ namespace kuet_hack_mock
                     {
                         conn.Open();
                         int rowsAffected = cmd.ExecuteNonQuery();
-                        if(rowsAffected > 0)
+                        if (rowsAffected > 0)
                         {
-                            Response.Write("<script>alert('Registration/Login recorded successfully!');</script>");
+                            Session["Username"] = inputUserName;
+                            Response.Redirect("profile_info.aspx");
                         }
                     }
                     catch (SqlException ex)
                     {
-                        if(ex.Number == 2627)
+                        if (ex.Number == 2627)
                         {
-                            // Unique constraint violation
+                            Session["Username"] = inputUserName;
+                            Response.Redirect("profile_info.aspx");
                         }
                     }
                     catch (Exception exc)
