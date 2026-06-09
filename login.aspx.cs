@@ -23,7 +23,7 @@ namespace kuet_hack_mock
 
             string connnectionString = ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString;
 
-            string query = "INSERT INTO Users (Username, Password) VALUES (@Username, @Password)";
+            string query = "INSERT INTO UserInfo (Username, Password) VALUES (@Username, @Password)";
 
             using (SqlConnection conn = new SqlConnection(connnectionString))
             {
