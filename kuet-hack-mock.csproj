@@ -88,7 +88,9 @@
     <Content Include="assets\robot3.jpg" />
     <Content Include="index.aspx" />
     <Content Include="login.aspx" />
+    <Content Include="profile_info.aspx" />
     <Content Include="sql\create_table.sql" />
+    <Content Include="styles\profile_info.css" />
     <Content Include="styles\styles.css" />
     <Content Include="testDB\testdb.aspx" />
     <Content Include="Web.config" />
@@ -107,6 +109,13 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="profile_info.aspx.cs">
+      <DependentUpon>profile_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="profile_info.aspx.designer.cs">
+      <DependentUpon>profile_info.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="styles\login.css" />

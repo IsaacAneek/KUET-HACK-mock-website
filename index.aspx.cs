@@ -18,5 +18,11 @@ namespace kuet_hack_mock
         {
             Response.Redirect("~/login.aspx");
         }
+
+        protected void onProfileIconClicked(object sender, EventArgs e)
+        {
+            Response.Redirect("~/profile_info.aspx");
+        }
+
     }
 }

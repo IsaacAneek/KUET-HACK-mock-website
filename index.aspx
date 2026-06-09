@@ -18,12 +18,14 @@
             </div>
 
             <div class="top-bar-right-side-buttons">
-                <asp:Button ID="BtnHome" runat="server" Text="Home" CssClass="nav-button"/>
-                <asp:Button ID="BtnPeople" runat="server" Text="People" CssClass="nav-button"/>
-                <asp:Button ID="BtnResearch" runat="server" Text="Research" CssClass="nav-button"/>
-                <asp:Button ID="BtnProjects" runat="server" Text="Projects" CssClass="nav-button"/>
-                <asp:Button ID="BtnLogin" runat="server" Text="Login" OnClick="onLoginPageButtonClicked" CssClass="nav-button"/>
+                <asp:Button ID="BtnHome" runat="server" Text="Home" CssClass="nav-button" />
+                <asp:Button ID="BtnPeople" runat="server" Text="People" CssClass="nav-button" />
+                <asp:Button ID="BtnResearch" runat="server" Text="Research" CssClass="nav-button" />
+                <asp:Button ID="BtnProjects" runat="server" Text="Projects" CssClass="nav-button" />
+                <asp:Button ID="BtnLogin" runat="server" Text="Login" OnClick="onLoginPageButtonClicked" CssClass="nav-button" />
+                <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/assets/profile_icon.png" AlternateText="User Icon" OnClick="onProfileIconClicked" CssClass="profile-icon-btn" />
             </div>
+
         </div>
 
         <div class="image-container">
@@ -60,11 +62,16 @@
         <div class="contact-info-container">
             <p>Contact</p>
             <p>
-                Registrar <br />
-                Khulna University of Engineering &amp; Technology (KUET), <br />
-                Khulna-9203, Bangladesh <br />
-                +88024777 32971 <br />
-                +88024777 33303 <br />
+                Registrar
+                <br />
+                Khulna University of Engineering &amp; Technology (KUET),
+                <br />
+                Khulna-9203, Bangladesh
+                <br />
+                +88024777 32971
+                <br />
+                +88024777 33303
+                <br />
                 registrar@kuet.ac.bd
             </p>
         </div>
