@@ -89,6 +89,7 @@
     <Content Include="index.aspx" />
     <Content Include="login.aspx" />
     <Content Include="profile_info.aspx" />
+    <Content Include="registration.aspx" />
     <Content Include="sql\create_table.sql" />
     <Content Include="styles\profile_info.css" />
     <Content Include="styles\styles.css" />
@@ -119,6 +120,13 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="styles\login.css" />
+    <Compile Include="registration.aspx.cs">
+      <DependentUpon>registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registration.aspx.designer.cs">
+      <DependentUpon>registration.aspx</DependentUpon>
+    </Compile>
     <Compile Include="testDB\testdb.aspx.cs">
       <DependentUpon>testdb.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

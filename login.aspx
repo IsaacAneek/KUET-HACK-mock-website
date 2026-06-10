@@ -22,8 +22,9 @@
             <asp:Label Text="Password" runat="server" />
             <asp:TextBox ID="password" runat="server" TextMode="Password" />
             <asp:Button CssClass="login-button" Text="Login" OnClick="onLoginClicked" runat="server" />
+            <p>Not a member of HACK and need a Member Portal account? Register here with your official email address.</p>
+            <asp:Button CssClass="register-button" Text="Register" OnClick="onGoToRegisterPageButtonClicked" runat="server" />
         </form>
-        <p>Work for a Member organization and need a Member Portal account? Register here with your official email address.</p>
         <p>Work for a Member organization and forgot your password? You can reset your password here.</p>
     </div>
 </body>

@@ -47,14 +47,16 @@ body {
 }
 
 .form-section input[type="text"], 
-.form-section input[type="password"] {
+.form-section input[type="password"],
+.form-section input[type="email"] {
     padding: 8px 12px;
     font-size: 1.2rem;
     border-radius: 4px;
 }
 
-.form-section .login-button {
-    width:73px;
+.register-button
+{
+    width: 100px;
     background-color: #1976d2;
     color: white;
     border: none;
@@ -64,6 +66,32 @@ body {
     cursor: pointer;
     border-radius: 4px;
     transition: background-color 0.2s ease;
+}
 
+
+.form-section .login-button {
+    width: 73px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.form1 .register-button {
+    width: 73px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
 }
 

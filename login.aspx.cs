@@ -13,6 +13,11 @@ namespace kuet_hack_mock
         {
 
         }
+        
+        protected void onGoToRegisterPageButtonClicked(object sender, EventArgs e)
+        {
+            Response.Redirect("~/registration.aspx");
+        }
 
         protected void onLoginClicked(object sender, EventArgs e)
         {
