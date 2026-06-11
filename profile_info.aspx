@@ -21,17 +21,17 @@
                 
                 <div class="form-group">
                     <asp:Label ID="lblUsername" runat="server" AssociatedControlID="txtUsername">Username:</asp:Label>
-                    <asp:TextBox ID="txtUsername" runat="server" ReadOnly="true"></asp:TextBox>
+                    <asp:TextBox ID="txtUsername" runat="server"></asp:TextBox>
                 </div>
 
                 <div class="form-group">
                     <asp:Label ID="lblRoll" runat="server" AssociatedControlID="txtRoll">Roll Number:</asp:Label>
-                    <asp:TextBox ID="txtRoll" runat="server" ReadOnly="true"></asp:TextBox>
+                    <asp:TextBox ID="txtRoll" runat="server"></asp:TextBox>
                 </div>
 
                 <div class="form-group">
                     <asp:Label ID="lblDepartment" runat="server" AssociatedControlID="txtDepartment">Department:</asp:Label>
-                    <asp:TextBox ID="txtDepartment" runat="server" ReadOnly="true"></asp:TextBox>
+                    <asp:TextBox ID="txtDepartment" runat="server"></asp:TextBox>
                 </div>
 
                 <div class="form-group">

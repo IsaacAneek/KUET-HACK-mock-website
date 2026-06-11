@@ -77,23 +77,41 @@ namespace kuet_hack_mock
         protected void onUpdateInfoClicked(object sender, EventArgs e)
         {
             string currentUsername = Session["Username"].ToString();
+
+            string newUsername = txtUsername.Text.Trim();
+            string newRoll = txtRoll.Text.Trim();
+            string newDepartment = txtDepartment.Text.Trim();
             string newPassword = txtPassword.Text;
-            string query = "UPDATE UserInfo SET Password = @Password WHERE Username = @Username";
+
+            string query = @"UPDATE UserInfo
+                     SET Username = @NewUsername,
+                         Roll = @Roll,
+                         Department = @Department,
+                         Password = @Password
+                     WHERE Username = @CurrentUsername";
 
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
+                    cmd.Parameters.AddWithValue("@NewUsername", newUsername);
+                    cmd.Parameters.AddWithValue("@Roll", newRoll);
+                    cmd.Parameters.AddWithValue("@Department", newDepartment);
                     cmd.Parameters.AddWithValue("@Password", newPassword);
-                    cmd.Parameters.AddWithValue("@Username", currentUsername);
+                    cmd.Parameters.AddWithValue("@CurrentUsername", currentUsername);
+
                     try
                     {
                         conn.Open();
+
                         int rows = cmd.ExecuteNonQuery();
+
                         if (rows > 0)
                         {
+                            Session["Username"] = newUsername;
+
                             lblMessage.ForeColor = System.Drawing.Color.Green;
-                            lblMessage.Text = "Password updated successfully!";
+                            lblMessage.Text = "Info updated successfully!";
                         }
                     }
                     catch
