@@ -23,6 +23,11 @@ namespace kuet_hack_mock
             }
         }
 
+        protected void onHomeButtonClicked(object sender, EventArgs e)
+        {
+            Response.Redirect("~/index.aspx");
+        }
+
         private void loadUserProfile()
         {
             string currentUsername = Session["Username"].ToString();

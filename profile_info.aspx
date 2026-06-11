@@ -46,6 +46,7 @@
 
             <div class="form-actions">
                 <asp:Button ID="btnUpdate" runat="server" Text="Update Info" OnClick="onUpdateInfoClicked" CssClass="btn-primary" />
+                <asp:Button ID="btnHome" Text="Home" runat="server" onClick="onHomeButtonClicked"/>
                 <asp:Label ID="lblMessage" runat="server" CssClass="message-label" ForeColor="Green"></asp:Label>
             </div>
 
