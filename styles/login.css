@@ -82,8 +82,8 @@ body {
     transition: background-color 0.2s ease;
 }
 
-.form1 .register-button {
-    width: 73px;
+.register-button2 {
+    width: 100px;
     background-color: #1976d2;
     color: white;
     border: none;

@@ -26,7 +26,7 @@ namespace kuet_hack_mock
 
             string connnectionString = ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString;
 
-            string query = "INSERT INTO UserInfo (Username, Password) VALUES (@Username, @Password)";
+            string query = "SELECT COUNT(*) FROM UserInfo WHERE Username = @Username AND Password = @Password";
 
             using (SqlConnection conn = new SqlConnection(connnectionString))
             {
@@ -35,27 +35,18 @@ namespace kuet_hack_mock
                     cmd.Parameters.AddWithValue("@Username", inputUserName);
                     cmd.Parameters.AddWithValue("@Password", inputPassword);
 
-                    try
-                    {
-                        conn.Open();
-                        int rowsAffected = cmd.ExecuteNonQuery();
-                        if (rowsAffected > 0)
-                        {
-                            Session["Username"] = inputUserName;
-                            Response.Redirect("profile_info.aspx");
-                        }
-                    }
-                    catch (SqlException ex)
-                    {
-                        if (ex.Number == 2627)
-                        {
-                            Session["Username"] = inputUserName;
-                            Response.Redirect("profile_info.aspx");
-                        }
-                    }
-                    catch (Exception exc)
-                    {
+                    conn.Open();
 
+                    int count = (int)cmd.ExecuteScalar();
+
+                    if (count > 0)
+                    {
+                        Session["Username"] = inputUserName;
+                        Response.Redirect("profile_info.aspx");
+                    }
+                    else
+                    {
+                        Response.Redirect("registration.aspx");
                     }
                 }
             }

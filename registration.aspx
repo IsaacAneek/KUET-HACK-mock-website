@@ -25,6 +25,6 @@
 
             <asp:Label Text="Email" runat="server" />
             <asp:TextBox ID="email" runat="server" TextMode="Email" />
-            <asp:Button CssClass="register-button" Text="Register" OnClick="onRegisterClicked" runat="server" />
+            <asp:Button CssClass="register-button2" Text="Register" OnClick="onRegisterClicked" runat="server" />
         </form>
     </div></body></html>

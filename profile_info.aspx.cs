@@ -26,7 +26,7 @@ namespace kuet_hack_mock
         private void loadUserProfile()
         {
             string currentUsername = Session["Username"].ToString();
-            string query = "SELECT Username, RollNo, Department, Password FROM UserInfo WHERE Username = @Username";
+            string query = "SELECT Username, Roll, Department, Password FROM UserInfo WHERE Username = @Username";
 
             using (SqlConnection conn = new SqlConnection(connString))
             {
@@ -41,7 +41,7 @@ namespace kuet_hack_mock
                             if (reader.Read())
                             {
                                 txtUsername.Text = reader["Username"].ToString();
-                                txtRoll.Text = reader["RollNo"].ToString();
+                                txtRoll.Text = reader["Roll"].ToString();
                                 txtDepartment.Text = reader["Department"].ToString();
                                 txtPassword.Attributes.Add("value", reader["Password"].ToString());
 
